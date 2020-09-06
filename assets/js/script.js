@@ -36,7 +36,9 @@ function erase() {
 
 // Star background
 
-const Star = function (x, y, z) {
+function starBackground(){
+    
+    const Star = function (x, y, z) {
 
     this.x = x; this.y = y; this.z = z;
 
@@ -65,7 +67,7 @@ function loop() {
     context.canvas.height = height;
     context.canvas.width = width;
 
-    context.fillStyle = "#cacaca";
+    context.fillStyle = "rgba(202, 202, 202, 1.0)";
     context.fillRect(0, 0, width, height);
 
     for (let index = stars.length - 1; index > -1; index--) {
@@ -94,7 +96,7 @@ function loop() {
 
         let color = Math.floor(scale * 256);
 
-        context.fillStyle = "rgb(" + color + "," + color + "," + color + ")";
+        context.fillStyle = "rgba(" + color + "," + color + "," + color + "," + scale + ")";
         context.fillRect(star_x, star_y, star.size * scale, star.size * scale);
 
     }
@@ -102,4 +104,10 @@ function loop() {
 }
 
 loop();
+
+}
+
+window.addEventListener("resize", starBackground);
+
+starBackground();
 
