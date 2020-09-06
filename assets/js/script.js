@@ -3,6 +3,8 @@ var speed = 75;
 var typed = document.querySelector(".typed").innerText;
 console.log(typed);
 
+// commit
+
 // empty the typed from span
 document.querySelector(".typed").innerText = '';
 
