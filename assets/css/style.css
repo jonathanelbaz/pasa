@@ -158,14 +158,14 @@ scrollbar-width: none;
 }
 
 .menu-page::-webkit-scrollbar-track {
-    /* margin-top: 85px; */
+/* margin-top: 85px; */
 background: rgba(180, 180, 180, 0.8);
+border-radius: 15px;
 }
 
 .menu-page::-webkit-scrollbar-thumb {
 background: #7f7f7f;
 border-radius: 15px;
-/* border-right: 1px solid white; */
 }
 
 /* End change scrollbar */
