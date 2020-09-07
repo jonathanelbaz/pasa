@@ -1,0 +1,23 @@
+.menu-page:before {
+    display: none;
+}
+
+.menu-page:after {
+    display: none;
+}
+
+.menu-page {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.menu-page::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Hide scrollbar for [IE, Edge] and Firefox */
+.menu-page {
+-ms-overflow-style: none;  
+scrollbar-width: none; 
+}
