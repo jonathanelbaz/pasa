@@ -104,6 +104,22 @@ tr {
 /* this adds fading */
 
 .menu-page:before {
+    pointer-events:none;
+    content:'';
+    width:97%;
+    height:10%;    
+    position:absolute;
+    left:0;
+    top:0;
+    background: linear-gradient(
+        to bottom,
+        rgba(202, 202, 202, 1) 0%,
+        rgba(202, 202, 202, 0) 10%
+    );
+}
+
+.menu-page:after {
+    pointer-events:none;
     content:'';
     width:97%;
     height:100%;    
@@ -119,21 +135,6 @@ tr {
     );
 }
 
-.menu-page:after {
-    content:'';
-    width:97%;
-    height:100%;    
-    position:absolute;
-    left:0;
-    top:0;
-    background: linear-gradient(
-        to bottom,
-        rgba(202, 202, 202, 1) 0%,
-        rgba(202, 202, 202, 0) 10%,
-        rgba(202, 202, 202, 0) 90%,
-        rgba(202, 202, 202, 1) 100%
-    );
-}
 
 p {
     text-align: justify;
