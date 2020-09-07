@@ -95,14 +95,32 @@ tr {
     width: 100%;
     height: 476px;
     overflow: hidden;
-    overflow-y: scroll;
-    padding: 2%;
+    overflow-y: auto;
+    padding: 1.5% 2% 2% 2%;
     border-radius: 0 25px 25px 0;
     background-color: #cacaca;
     box-shadow: 0 0 15px 10px #cacaca;
 }
 
+/* this adds fading */
+
 .menu-page:before {
+    content:'';
+    width:97%;
+    height:100%;    
+    position:absolute;
+    left:0;
+    top:0;
+    background: linear-gradient(
+        to bottom,
+        rgba(202, 202, 202, 1) 0%,
+        rgba(202, 202, 202, 0) 10%,
+        rgba(202, 202, 202, 0) 90%,
+        rgba(202, 202, 202, 1) 100%
+    );
+}
+
+.menu-page:after {
     content:'';
     width:97%;
     height:100%;    
@@ -250,4 +268,81 @@ nav a:hover {
 .navi a:active {
     text-decoration: underline;
     color: black;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+    /* letter-spacing: 20px;
+    word-spacing: 30px; */
+}
+
+.top-menu {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+/* exec avatars */
+.avatar {
+    /* border: 1px solid black; */
+    padding: auto !important;
+    margin: 2% 0 !important;
+    text-align: center;
+}
+
+.av-img {
+    width: 100%;
+    /* height is defined in javascript file to be same as width */
+    border-radius: 50%;
+    background-size: cover;
+    margin-bottom: 10%;
+}
+
+#katelynn {
+    background-image: url("../media/katelynn.jpg");
+}
+
+#elijah {
+    background-image: url("../media/elijah.jpg");
+}
+
+#gabby {
+    background-image: url("../media/gabby.jpg");
+}
+
+#abby {
+    background-image: url("../media/abby.jpg");
+}
+
+#josh {
+    background-image: url("../media/josh.jpg");
+}
+
+#nic {
+    background-image: url("../media/nic.jpg");
+}
+
+#faith {
+    background-image: url("../media/faith.jpg");
+}
+
+#ethan {
+    background-image: url("../media/ethan.jpg");
+}
+
+#jonathan {
+    background-image: url("../media/jonathan.jpg");
+}
+
+#isaac {
+    background-image: url("../media/isaac.jpg");
+}
+
+.avatar span {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.avatar strong {
+    font-size: 1rem;
 }

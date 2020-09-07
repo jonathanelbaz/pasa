@@ -113,3 +113,16 @@ window.addEventListener("resize", starBackground);
 
 starBackground();
 
+// Make avatar height same as width
+
+function fixsize() {
+    var cw = $('.av-img').width();
+    $('.av-img').css({'height':cw+'px'});
+}
+
+window.addEventListener("resize", fixsize);
+
+fixsize();
+
+
+
