@@ -1150,6 +1150,7 @@ var checkExist = setInterval(function() {
     if ($('.jsx-2961102828').length) {
     //    console.log("Exists!");
        $('a[href="https://elfsight.com/event-calendar-widget/?utm_source=websites&utm_medium=clients&utm_content=event-calendar&utm_term=&utm_campaign=free-widget"]').closest('div').remove();
+       $('a[href="https://elfsight.com/event-calendar-widget/?utm_source=websites&utm_medium=clients&utm_content=event-calendar&utm_term=jonathanelbaz.github.io&utm_campaign=free-widget"]').closest('div').remove();
        clearInterval(checkExist);
     }
  }, 100);
