@@ -341,3 +341,7 @@ h2 {
 hr {
     margin: 0 !important;
 }
+
+object {
+    /* opacity: 0.6 !important; */
+}

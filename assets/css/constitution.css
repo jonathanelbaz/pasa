@@ -9,6 +9,7 @@
 .menu-page {
     margin: 0;
     padding: 0;
+    overflow: hidden !important;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
