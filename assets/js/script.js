@@ -94,7 +94,7 @@ function loop() {
 
         let scale = field_of_view / (field_of_view + star.z);
 
-        let color = Math.floor(scale * 256);
+        let color = Math.floor(scale * 202);
 
         context.fillStyle = "rgba(" + color + "," + color + "," + color + "," + scale + ")";
         context.fillRect(star_x, star_y, star.size * scale, star.size * scale);
