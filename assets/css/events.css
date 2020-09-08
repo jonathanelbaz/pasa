@@ -18,8 +18,8 @@
     overflow: hidden;
     overflow-y: auto;
     padding: 1.5% 2% 2% 2%;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #cacaca00 !important;
+    border-radius: 35x !important;
+    background-color: #cacaca !important;
     box-shadow: 0 0 15px 10px #cacaca00 !important;
 }
 
@@ -27,17 +27,16 @@
     pointer-events:none;
     position: absolute; /* Sit on top of the page content */
     display: block; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
+    width: 97%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to right, red , blue);
     background-image: linear-gradient(to bottom,
         rgba(202, 202, 202, 1) 0%,
-        rgba(202, 202, 202, 0) 10%,
-        rgba(202, 202, 202, 0) 90%,
+        rgba(202, 202, 202, 0) 5%,
+        rgba(202, 202, 202, 0) 95%,
         rgba(202, 202, 202, 1) 100%
     );
     z-index: 99; /* Specify a stack order in case you're using a different order for other elements */
