@@ -18,10 +18,10 @@ label {
 label:after {
   content: '';
   position: absolute;
-  top: 0.09rem;
+  top: 0.01rem;
   left: 0.12rem;
-  width: 0.70rem;
-  height: 0.70rem;
+  width: 0.8rem;
+  height: 0.8rem;
   background: #fcfcfc;
   border-radius: .90rem;
   -webkit-transition: 0.4s;
