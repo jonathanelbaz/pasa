@@ -67,7 +67,9 @@ function loop() {
     context.canvas.height = height;
     context.canvas.width = width;
 
-    context.fillStyle = "rgba(202, 202, 202, 1.0)";
+    // context.fillStyle = "rgba(202, 202, 202, 1.0)";
+    // context.fillStyle = "#1D201F";
+    context.fillStyle = "#090909";
     context.fillRect(0, 0, width, height);
 
     for (let index = stars.length - 1; index > -1; index--) {
@@ -94,7 +96,7 @@ function loop() {
 
         let scale = field_of_view / (field_of_view + star.z);
 
-        let color = Math.floor(scale * 202);
+        let color = Math.floor(256 - (scale * 226));
 
         context.fillStyle = "rgba(" + color + "," + color + "," + color + "," + scale + ")";
         context.fillRect(star_x, star_y, star.size * scale, star.size * scale);
