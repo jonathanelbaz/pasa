@@ -59,7 +59,7 @@ body {
     color: white !important;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
-    text-shadow: 1px 1px rgba(0,0,0,0.16), 2px 2px rgba(0,0,0,0.12);
+    text-shadow: 1px 1px rgba(256,256,256,0.16), 2px 2px rgba(256,256,256,0.12);
 }
 
 .col, .col-1, .col-2, .col-3,.col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
@@ -78,7 +78,7 @@ body {
 
 .top-container {
     position: absolute !important;
-    padding: 10px 0 !important;
+    padding: 0 !important;
     max-width: 100% !important;
     background: black;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
@@ -91,6 +91,7 @@ body {
 
 .top-row {
     font-size: 0.75rem;
+    padding: 10px 0 !important;
 }
 
 tr {
@@ -162,6 +163,7 @@ tr {
 
 #bottom {
     position: fixed !important;
+    padding: 15px 0 !important;
     bottom: 0;
 }
 
@@ -178,9 +180,9 @@ tr {
 /* Menu effect */
 nav a {
     position: relative;
-    margin: 0 20px;
+    margin: 0 20px !important;
     font-size: 1em;
-    color: #000;
+    color: white;
     text-decoration: none;
 }
 
@@ -189,7 +191,7 @@ nav #marker {
     left: 0;
     height: 1px;
     width: 0;
-    background: #000;
+    background: white;
     bottom: -8px;
     transition: 0.5s;
     border-radius: 4px;
@@ -197,28 +199,75 @@ nav #marker {
 
 nav a:hover {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .navi a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .navi a:hover {
     text-decoration: underline;
-    color: black;
+    color: white;
 }
 
 .navi a:active {
     text-decoration: underline;
-    color: black;
+    color: white;
 }
 
 /* Responsive settings */
 
 #hori {
     display: none;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    :root {
+        font-size: 18px;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    :root {
+        font-size: 20px;
+    }
+
+    #vert {
+        display: none;
+    }
+
+    #hori {
+        display: block;
+        max-width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    :root {
+        font-size: 22px;
+    }
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    :root {
+        font-size: 24px;
+    }
+
 }
 
 /* star background */
