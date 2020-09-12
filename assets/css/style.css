@@ -146,7 +146,7 @@ tr {
     transform: translateY(-40%) !important;
     overflow: hidden !important;
     overflow-y: auto !important;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 #welcome {
