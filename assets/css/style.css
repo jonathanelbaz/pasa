@@ -26,14 +26,7 @@
     font-display: swap;
 }
 
-:root {
-    --grad-bot: #1b2735;
-    --grad-top: #090a0f;
-    --bg: black;
-    --text: #fcfcfc;
-    --shade: 256;
-    --star: #FFF;
-}
+
 
 /* outline */
 /* .container {
@@ -142,7 +135,7 @@ tr {
 
 #daynight label {
     transform: translate(50%, -4px);
-    border: 2px solid var(--text);
+    border: 2px solid var(--button);
 }
 
 #middle {

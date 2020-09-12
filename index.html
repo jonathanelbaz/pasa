@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -40,7 +40,7 @@
                         </tr>
                     </table>
                 </div>
-                <div id="burger" class="col-2 outline text-center hamburger">
+                <div id="burger" class="col-2 outline text-center hamburger hide">
                     <button class="navbar-toggler outline" data-toggle="collapse" data-target="#navLinks"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
@@ -50,19 +50,22 @@
                     <table id="daynight" class="outline">
                         <tr>
                             <td class="outline">
-                                <input type="checkbox" id="toggle"/>
+                                <input type="checkbox" id="toggle" name="theme"/>
                                 <label for="toggle" class="outline"></label>
                             </td>
                         </tr>
                         <tr>
-                            <td class="outline">
+                            <td id="light" class="outline">
                                 light mode
+                            </td>
+                            <td id="night" class="outline hide">
+                                night mode
                             </td>
                         </tr>
                     </table>
                 </div>
             </div>
-            <div class="row justify-contents-center text-center hamburger hide">
+            <div class="row justify-contents-center text-center hamburger">
                 <div id="navLinks" class="collapse navbar-collapse">
                     <ul class="navbar-nav outline">
                         <li class="nav-item">
@@ -172,34 +175,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/toggle.css">
     <script src="assets/js/script.js"></script>
-
-    <script type="text/javascript">
-        function menuChange() {
-            if ($('#hori').is(':visible')) {
-                var marker = document.querySelector('#marker');
-                var item = document.querySelectorAll('nav a');
-
-                function indicator(e) {
-                    marker.style.left = e.offsetLeft + "px";
-                    marker.style.width = e.offsetWidth + "px";
-                }
-
-                item.forEach(link => {
-                    link.addEventListener('mouseover', (e) => {
-                        indicator(e.target);
-                    })
-                })
-            }
-        }
-
-        $(window).resize(function() { 
-            marker.style.left = 0;
-            marker.style.width = 0;
-            menuChange();
-        });
-
-        menuChange();
-    </script>
 
 </body>
 

@@ -1,5 +1,33 @@
 // night mode toggle  
 
+html[data-theme='dark'] {
+    --grad-bot: #1b2735;
+    --grad-top: #090a0f;
+    --bg: black;
+    --text: #fcfcfc;
+    --shade: 256;
+	--star: #FFF;
+	--button: #fcfcfc;
+}
+
+html[data-theme='light'] {
+    --grad-bot: #fcfcfc;
+    --grad-top: #cacaca;
+    --bg: #cacaca;
+    --text: #333333;
+    --shade: 0;
+	--star: black;
+	--button: #eeeeee;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
 input[type=checkbox]{
 	height: 0;
 	width: 0;
@@ -24,7 +52,7 @@ label:after {
 	left: 0.12rem;
 	width: 0.83rem;
 	height: 0.83rem;
-	background: #fcfcfc;
+	background: var(--button);
 	border-radius: .90rem;
 	transition: 0.4s;
 }
