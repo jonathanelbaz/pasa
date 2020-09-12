@@ -29,13 +29,13 @@
 
 
 /* outline */
-/* .container {
+.container {
     border: 1px solid red;
 }
 
 .outline {
     border: 1px dashed green;
-} */
+}
 /* end of outline */
 
 .hide {
@@ -134,16 +134,19 @@ tr {
 }
 
 #daynight label {
-    transform: translate(50%, -4px);
+    transform: translate(55%, -4px);
     border: 2px solid var(--button);
 }
 
 #middle {
     position: absolute !important;
     max-width: 100% !important;
-    max-height: 100% !important;
+    max-height: 60% !important;
     top: 50% !important;
     transform: translateY(-40%) !important;
+    overflow: hidden !important;
+    overflow-y: auto !important;
+    border: 1px solid yellow;
 }
 
 #welcome {
@@ -266,7 +269,7 @@ nav a:hover {
         display: block;
         max-width: 100%;
         margin: 0 !important;
-        padding: 0 !important;
+        padding: 0 0 20px 0 !important;
     }
 
 }
@@ -288,6 +291,26 @@ nav a:hover {
     }
 
 }
+
+/* Change scrollbar */
+#middle::-webkit-scrollbar {
+    width: 7.5px;
+}
+
+#middle::-webkit-scrollbar-track {
+/* margin-top: 85px; */
+/* background: rgba(180, 180, 180, 0.8); */
+background: rgba(180, 180, 180, 0.5);
+border-radius: 15px;
+}
+
+#middle::-webkit-scrollbar-thumb {
+/* background: #7f7f7f; */
+background: #7f7f7f;
+border-radius: 15px;
+}
+
+/* End change scrollbar */
 
 /* star background */
 
