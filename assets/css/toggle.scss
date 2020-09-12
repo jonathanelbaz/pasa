@@ -8,6 +8,7 @@ html[data-theme='dark'] {
     --shade: 256;
 	--star: #FFF;
 	--button: #fcfcfc;
+	--hover: #a3a3a3;
 }
 
 html[data-theme='light'] {
@@ -18,6 +19,7 @@ html[data-theme='light'] {
     --shade: 0;
 	--star: black;
 	--button: #eeeeee;
+	--hover: white;
 }
 
 html.transition,

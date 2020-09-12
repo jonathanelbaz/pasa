@@ -101,9 +101,17 @@ tr {
 }
 
 #brand {
-    padding: 0 !important;
+    padding: 0.2rem 0 !important;
     margin-left: 20px !important;
 }
+
+#brand table:hover {
+    color: var(--hover) !important;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
 
 #unilogo {
     font-family: "Icons", sans-serif;
@@ -192,6 +200,12 @@ tr {
 #bottom .text-left {
     margin-left: 20px !important;
     word-spacing: 15px !important;
+}
+
+#bottom i:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition: 0.1s;
 }
 
 #bottom .text-right {
