@@ -150,6 +150,17 @@ tr {
     font-size: 2rem;
 }
 
+.typed + span {
+    animation: blink 1060ms infinite;
+}
+
+@keyframes blink {
+      0% { opacity: 0; }
+     49% { opacity: 0; }
+     50% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
 #pasa {
     transform: translateY(-20px);
 }
@@ -201,7 +212,7 @@ nav #marker {
     width: 0;
     background: var(--text);
     bottom: -8px;
-    transition: 0.5s;
+    transition: 0.4s;
     border-radius: 4px;
 }
 
