@@ -1,5 +1,5 @@
 var pos = 0;
-var speed = 85;
+var speed = 90;
 var typed = document.querySelector(".typed").innerText;
 console.log(typed);
 
