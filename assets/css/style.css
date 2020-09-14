@@ -26,7 +26,27 @@
     font-display: swap;
 }
 
+html[data-theme='dark'] {
+    --grad-bot: #1b2735;
+    --grad-top: #090a0f;
+    --bg: black;
+    --text: #fcfcfc;
+    --shade: 256;
+	--star: #FFF;
+	--button: #fcfcfc;
+	--hover: #a3a3a3;
+}
 
+html[data-theme='light'] {
+    --grad-bot: #fcfcfc;
+    --grad-top: #cacaca;
+    --bg: #cacaca;
+    --text: #333333;
+    --shade: 0;
+	--star: black;
+	--button: #eeeeee;
+	--hover: white;
+}
 
 /* outline */
 /* .container {
@@ -145,6 +165,84 @@ tr {
     transform: translate(55%, -4px);
     border: 2px solid var(--button);
 }
+
+/* daynight toggle */
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 2.0rem;
+	height: 1rem;
+	background: grey;
+	display: block;
+	border-radius: 1rem;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0.12rem;
+	width: 0.78rem;
+	height: 0.78rem;
+	background: var(--button);
+	border-radius: .90rem;
+	transition: 0.4s;
+}
+
+input:checked + label {
+	background: rgb(49, 49, 49);
+}
+
+input:checked + label:after {
+	left: calc(100% - 0.12rem);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 1.3rem;
+}
+
+@media (min-width: 576px) {
+    label:after {
+        top: 0;
+        left: 0.12rem;
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    label:after {
+        top: 0;
+        left: 0.12rem;
+        width: 0.82rem;
+        height: 0.82rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+/* end of daynight toggle */
 
 #middle {
     position: absolute !important;
