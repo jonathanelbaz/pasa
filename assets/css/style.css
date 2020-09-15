@@ -153,6 +153,7 @@ tr {
 
 #burger span {
     transform: translateY(4px);
+    color: var(--text);
 }
 
 #burger + div {
