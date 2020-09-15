@@ -49,13 +49,13 @@ html[data-theme='light'] {
 }
 
 /* outline */
-/* .container {
+.container {
     border: 1px solid red;
 }
 
 .outline {
     border: 1px dashed green;
-} */
+}
 /* end of outline */
 
 .hide {
@@ -167,7 +167,7 @@ tr {
 }
 
 #daynight label {
-    transform: translate(55%, -4px);
+    transform: translate(55%, 0px);
     border: 2px solid var(--button);
 }
 
@@ -248,6 +248,22 @@ label:active:after {
 
 }
 /* end of daynight toggle */
+
+#topBar {
+    z-index: 999 !important;
+}
+
+#dropdown {
+    /* z-index: 999 !important; */
+}
+
+#navLinks a {
+    color: var(--text);
+}
+
+#navLinks a:hover {
+    color: var(--text) !important;
+}
 
 #middle {
     position: absolute !important;
