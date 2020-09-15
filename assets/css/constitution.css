@@ -8,14 +8,18 @@
     position: absolute !important;
     max-width: 100% !important;
     max-height: 100% !important;
-    top: 20%;
+    top: 15%;
     text-align: justify !important;
     /* responsive */
     padding: 0 30px;
 }
 
+.contentHeader {
+    margin-bottom: 3vh;
+}
+
 .stuff {
-    max-height: 50vh;
+    max-height: 60vh;
     overflow: hidden !important;
     overflow-y: auto !important;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(5%, rgba(1,1,1,1)), color-stop(95%, rgba(1,1,1,1)), color-stop(100%, rgba(0,0,0,0)));

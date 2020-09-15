@@ -125,6 +125,10 @@ tr {
     margin-left: 20px !important;
 }
 
+.bottom-row .text-left {
+    cursor: default;
+}
+
 #brand table:hover {
     color: var(--hover) !important;
     cursor: pointer;
