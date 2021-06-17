@@ -170,7 +170,7 @@ $(document).ready(function(){
             href: "assets/css/constitution.css"
          }).appendTo("head");
 
-          $('#katelynn').redraw();
+          $('#updatecontent').redraw();
           
 
         // Stop normal link behaviour
