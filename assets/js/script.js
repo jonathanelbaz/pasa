@@ -136,7 +136,7 @@ $(document).ready(function() {
 $(document).ready(function(){
     // Set trigger and container variables
     var trigger = $('#princmenu a'),
-        container = $('.updatecontent');
+        container = $('#updatecontent');
 
     // Fire on click
     trigger.on('click', function(){
