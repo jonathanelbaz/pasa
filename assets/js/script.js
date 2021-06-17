@@ -164,7 +164,14 @@ $(document).ready(function(){
             console.log("Redrawn success");
           };
 
+          $("<link/>", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "assets/css/constitution.css"
+         }).appendTo("head");
+
           $('#katelynn').redraw();
+          
 
         // Stop normal link behaviour
         return false;
