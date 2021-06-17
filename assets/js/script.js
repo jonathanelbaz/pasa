@@ -98,6 +98,7 @@ $(window).resize(function () {
 
 menuChange();
 
+// Commit comment
 
 // Cursor change code
 
