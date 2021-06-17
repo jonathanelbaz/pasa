@@ -150,7 +150,7 @@ $(document).ready(function(){
                 container.load(target + '.html', function(){
                     container.fadeIn('slow');
                 });
-
+            });
         // // Load target page into container
         // container.load(target + '.html');
 
