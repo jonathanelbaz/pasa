@@ -157,8 +157,18 @@ $(document).ready(function(){
 
         console.log("Hello! I am an alert box!!");
         
+        $.fn.redraw = function(){
+            $(this).each(function(){
+              var redraw = this.offsetHeight;
+            });
+          };
+
+          $('#katelynn').redraw();
+
         // Stop normal link behaviour
         return false;
+    
+
     });
 
 });
