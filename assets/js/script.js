@@ -146,12 +146,23 @@ $(document).ready(function(){
         var $this = $(this),
             target = $this.data('target');
 
-        // Load target page into container
-        container.load(target + '.html');
+            container.fadeOut('slow', function(){
+                container.load(target + '.html', function(){
+                    container.fadeIn('slow');
+                });
+
+        // // Load target page into container
+        // container.load(target + '.html');
 
         console.log("Hello! I am an alert box!!");
         // Stop normal link behaviour
         return false;
+    });
+
+    container.fadeOut('slow', function(){
+        container.load(target + '.html', function(){
+            container.fadeIn('slow');
+        });
     });
 
 });
