@@ -156,6 +156,12 @@ $(document).ready(function(){
 
         console.log("Hello! I am an alert box!!");
         // Stop normal link behaviour
+
+        $('<img/>').attr('src', 'assets/media/katelynn.jpg').on('load', function() {
+         $(this).remove(); // prevent memory leaks as @benweet suggested
+        $('#katelynn').css('background-image', 'url(assets/media/katelynn.jpg)');
+});
+
         return false;
     });
 
