@@ -159,10 +159,4 @@ $(document).ready(function(){
         return false;
     });
 
-    container.fadeOut('slow', function(){
-        container.load(target + '.html', function(){
-            container.fadeIn('slow');
-        });
-    });
-
 });
