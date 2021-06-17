@@ -99,4 +99,34 @@ $(window).resize(function () {
 menuChange();
 
 
+// Cursor change code
+
+$(document).ready(function() {
+
+    $('#bigchung').on('click', function() {
+        $('body').css('cursor', 'url(assets/cursors/big_chungus_cursor.cur),auto');
+    })
+})
+
+$(document).ready(function() {
+
+     $('#ugchung').on('click', function() {
+        $('body').css('cursor', 'url(assets/cursors/ugandan-chungus-cursor.cur),auto');
+    })
+})
+
+$(document).ready(function() {
+
+    $('#amus').on('click', function() {
+       $('body').css('cursor', 'url(assets/cursors/among-us-pointer.cur),auto');
+   })
+})
+
+$(document).ready(function() {
+
+    $('#cureset').on('click', function() {
+       $('body').css({ 'cursor' : ''});
+   })
+})
+
 
