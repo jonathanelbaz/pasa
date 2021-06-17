@@ -161,6 +161,7 @@ $(document).ready(function(){
             $(this).each(function(){
               var redraw = this.offsetHeight;
             });
+            console.log("Redrawn success");
           };
 
           $('#katelynn').redraw();
